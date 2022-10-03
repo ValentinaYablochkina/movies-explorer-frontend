@@ -1,0 +1,26 @@
+.navtab {
+  min-height: 66px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.navtab__section {
+  color: white;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+  margin-right: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navtab__section:hover {
+  opacity: 0.8;
+}
+
+.navtab__section:last-child {
+  margin-right: 0;
+}
