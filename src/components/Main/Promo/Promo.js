@@ -4,12 +4,12 @@ import BackLogo from "../../../images/landing-logo.svg";
 
 function Promo() {
   return (
-    <div className="promo">
+    <section className="promo">
       <p className="promo__about">
         Учебный проект студента факультета Веб-разработки.
       </p>
       <img src={BackLogo} alt="Логотип" className="promo__logo" />
-    </div>
+    </section>
   );
 }
 

@@ -5,7 +5,7 @@ import "./register.css";
 
 function Register() {
   return (
-    <div>
+    <section>
       <header className="register__header">
         <img src={logo} alt="Логотип" className="register__logo" />
         <h2 className="register__words">Добро пожаловать!</h2>
@@ -18,22 +18,19 @@ function Register() {
         <p className="register__inscription">Пароль</p>
         <input className="register__field" type="password" />
         <span id="error" className="error" />
-        <footer className="register__footer">
-          <button className="register__btn" type="submit">
-            Зарегистрироваться
-          </button>
-          <p className="register__sign">
-            Уже зарегистрированы?{" "}
-            <Link
-              to="/signin"
-              className="register__sign register__sign_register"
-            >
-              Войти
-            </Link>
-          </p>
-        </footer>
       </form>
-    </div>
+      <footer className="register__footer">
+        <button className="register__btn" type="submit">
+          Зарегистрироваться
+        </button>
+        <p className="register__sign">
+          Уже зарегистрированы?{" "}
+          <Link to="/signin" className="register__sign register__sign_register">
+            Войти
+          </Link>
+        </p>
+      </footer>
+    </section>
   );
 }
 

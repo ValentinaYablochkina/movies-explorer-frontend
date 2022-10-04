@@ -89,9 +89,18 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 890px) {
+  .register__footer {
+    margin-top: 179px;
+  }
+  .register__form {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 490px) {
   .register__header {
-    margin: 0 30px;
+    margin: 0 auto;
     width: 260px;
     align-items: center;
   }
@@ -99,7 +108,7 @@
     width: 260px;
   }
   .register__form {
-    margin: 0 30px;
+    margin: 0 auto;
     width: 260px;
   }
   .register__btn {

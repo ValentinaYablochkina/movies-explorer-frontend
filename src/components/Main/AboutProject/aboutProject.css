@@ -4,47 +4,46 @@
   font-size: 22px;
   font-weight: 400;
   text-align: start;
-  margin: 110px 0 23px 70px;
+  margin: 110px 70px 0 70px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid black;
 }
 
 .aboutProject__levels {
   display: flex;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin: 70px 30px 110px 70px;
 }
 
 .aboutProject__level {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
+  margin-right: 40px;
 }
 
 .aboutProject__levels_first {
-  padding-top: 70px;
   margin: 0 0 26px;
-  width: 550px;
+  max-width: 550px;
   color: black;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: start;
-  border-top: 1px solid black;
 }
 
 .aboutProject__levels_second {
-  width: 550px;
+  max-width: 550px;
   color: black;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-align: start;
   margin-top: 0;
-  margin-bottom: 110px;
 }
 
 .aboutProject__weeks {
   display: flex;
-  margin-left: 70px;
+  margin: 0 70px;
 }
 
 .aboutProject__weeks_one {
@@ -77,9 +76,7 @@
 
 .aboutProject__end {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 70px;
-  margin-bottom: 0;
+  margin: 0 70px;
 }
 
 .aboutProject__end_back {
@@ -94,9 +91,9 @@
 }
 
 .aboutProject__end_front {
-  margin-top: 14px;
   width: 912px;
   height: 36px;
+  margin-top: 14px;
   color: #a0a0a0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -104,142 +101,66 @@
   margin-bottom: 110px;
 }
 
-@media screen and (max-width: 1210px) {
-  .aboutProject__levels_first {
-    width: 519px;
-  }
-  .aboutProject__levels_second {
-    width: 519px;
-  }
-  .aboutProject__weeks_one {
-    width: 240px;
-  }
-  .aboutProject__weeks_four {
-    width: 728px;
-  }
-  .aboutProject__end_back {
-    width: 240px;
-  }
-  .aboutProject__end_front {
-    width: 728px;
-  }
-}
-
-@media screen and (max-width: 1110px) {
-  .aboutProject__levels_first {
-    width: 405px;
-  }
-  .aboutProject__levels_second {
-    width: 405px;
-  }
-  .aboutProject__weeks_one {
-    width: 200px;
-  }
-  .aboutProject__weeks_four {
-    width: 628px;
-  }
-  .aboutProject__end_back {
-    width: 200px;
-  }
-  .aboutProject__end_front {
-    width: 628px;
-  }
-}
-
 @media screen and (max-width: 890px) {
-  .aboutProject__levels {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .aboutProject__levels_first {
-    width: 319px;
-  }
-  .aboutProject__levels_second {
-    width: 319px;
-    font-size: 12px;
-    margin-bottom: 93px;
-  }
-
-  .aboutProject__weeks {
-    margin-left: 50px;
-  }
-  .aboutProject__weeks_one {
-    width: 140px;
-  }
-  .aboutProject__weeks_four {
-    width: 528px;
-  }
-
-  .aboutProject__end {
-    margin-left: 50px;
-  }
-  .aboutProject__end_back {
-    width: 140px;
-    margin-bottom: 90px;
-  }
-  .aboutProject__end_front {
-    width: 528px;
-    margin-bottom: 90px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .aboutProject__end_back {
-    width: 120px;
-  }
-  .aboutProject__end_front {
-    width: 280px;
-  }
-
-  .aboutProject__levels_first {
-    width: 220px;
-  }
-  .aboutProject__levels_second {
-    width: 220px;
-  }
-  .aboutProject__levels {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-@media screen and (max-width: 450px) {
   .aboutProject {
-    margin-left: 18px;
+    margin: 90px 50px 0 50px;
   }
   .aboutProject__levels {
-    margin-left: 18px;
-    margin-right: 18px;
+    margin: 70px 20px 93px 50px;
+  }
+  .aboutProject__levels_second {
+    font-size: 12px;
+    margin: 0;
+  }
+  .aboutProject__end {
+    margin: 0 50px;
+  }
+  .aboutProject__weeks {
+    margin: 0 50px;
+  }
+  .aboutProject__level {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .aboutProject__levels {
     flex-direction: column;
+    margin: 0 18px 60px 18px;
+  }
+  .aboutProject__level {
+    margin-right: 0;
+    margin-top: 60px;
+  }
+  .aboutProject {
+    margin: 70px 18px 0 18px;
+    padding-bottom: 28px;
   }
   .aboutProject__levels_first {
     font-size: 18px;
   }
   .aboutProject__levels_second {
     font-size: 11px;
-    margin-bottom: 70px;
+    margin: 0;
   }
   .aboutProject__weeks {
-    margin-left: 18px;
+    margin: 0 18px;
   }
-
+  .aboutProject__end {
+    margin: 0 18px;
+  }
   .aboutProject__weeks_one {
-    width: 100px;
+    font-size: 11px;
   }
   .aboutProject__weeks_four {
-    width: 184px;
-  }
-
-  .aboutProject__end {
-    margin-left: 18px;
+    font-size: 11px;
   }
   .aboutProject__end_back {
-    width: 100px;
+    font-size: 11px;
     margin-bottom: 70px;
   }
   .aboutProject__end_front {
-    width: 184px;
+    font-size: 11px;
     margin-bottom: 70px;
   }
 }

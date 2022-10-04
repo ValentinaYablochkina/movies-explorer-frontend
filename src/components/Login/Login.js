@@ -15,6 +15,7 @@ function Login() {
         <input className="register__field" type="email" />
         <p className="register__inscription">Пароль</p>
         <input className="register__field" type="password" />
+        </form>
         <footer className="register__footer">
           <button className="register__btn" type="submit">
             Войти
@@ -29,7 +30,6 @@ function Login() {
             </Link>
           </p>
         </footer>
-      </form>
     </div>
   );
 }
