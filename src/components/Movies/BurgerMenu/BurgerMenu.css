@@ -1,0 +1,72 @@
+.burgerMenu {
+  position: fixed;
+  width: 520px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+.burgerMenu__close {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  background-color: inherit;
+  border: none;
+}
+
+.burgerMenu-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+}
+
+.burgerMenu-button {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 28px;
+}
+.burgerMenu-button__main {
+  background-color: inherit;
+  border: none;
+}
+.burgerMenu-button__films {
+  background-color: inherit;
+  border: none;
+}
+.burgerMenu-button__saved-films {
+  background-color: inherit;
+  border: none;
+}
+
+.burgerMenu-button__account-btn {
+  margin-bottom: 90px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #aaaaaa;
+  text-decoration: none;
+  width: 100px;
+  height: 32px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.burgerMenu-button:active {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 530px) {
+  .burgerMenu {
+    width: 320px;
+  }
+}
