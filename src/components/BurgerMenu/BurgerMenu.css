@@ -9,6 +9,11 @@
   flex-direction: column;
   justify-content: space-between;
   visibility: hidden;
+  text-align: center;
+}
+
+.burgerMenu_opened {
+  visibility: visible;
 }
 
 .burgerMenu__close {
@@ -37,14 +42,31 @@
 .burgerMenu-button__main {
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
+
+.burgerMenu-button__main:hover {
+  border-bottom: 2px solid black;
+}
+
 .burgerMenu-button__films {
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
+
+.burgerMenu-button__films:hover {
+  border-bottom: 2px solid black;
+}
+
 .burgerMenu-button__saved-films {
   background-color: inherit;
   border: none;
+  cursor: pointer;
+}
+
+.burgerMenu-button__saved-films:hover {
+  border-bottom: 2px solid black;
 }
 
 .burgerMenu-button__account-btn {
@@ -61,12 +83,8 @@
   font-weight: 500;
 }
 
-.burgerMenu-button:active {
-  border: 1px solid black;
-}
-
 @media screen and (max-width: 530px) {
   .burgerMenu {
-    width: 320px;
+    width: 100%;
   }
 }

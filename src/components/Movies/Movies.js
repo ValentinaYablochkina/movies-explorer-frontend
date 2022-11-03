@@ -1,24 +1,38 @@
 import React from "react";
-import Header from "../Profile/Header";
 import SearchForm from "./SearchForm/SearchForm";
 import MoviesCardList from "./MoviesCardList/MoviesCardList";
-import Footer from "../Main/Footer/Footer";
 import "./movies.css";
-import BurgerMenu from "./BurgerMenu/BurgerMenu";
-import Preloader from './Preloader';
+import Preloader from "./Preloader";
+import Header from "../Main/Header/Header";
+import Footer from "../Main/Footer/Footer";
 
-function Movies() {
+function Movies({
+  loggedIn,
+  movies,
+  savedMovies,
+  isShorts,
+  onBurgerMenuClick,
+  onSeacrhedName,
+  onToggleIsShorts,
+  onSave,
+  onUnsave,
+}) {
   return (
     <div>
-      <Header />
-      <SearchForm />
+      <Header loggedIn={loggedIn} onBurgerMenuClick={onBurgerMenuClick} />
+      <SearchForm
+        onSeacrhedName={onSeacrhedName}
+        isShorts={isShorts}
+        onToggleIsShorts={onToggleIsShorts}
+      />
       <Preloader />
-      <MoviesCardList />
-      <section className="movies__else">
-        <button className="movies__else-button">Ещё</button>
-      </section>
+      <MoviesCardList
+        movies={movies}
+        savedMovies={savedMovies}
+        onSave={onSave}
+        onUnsave={onUnsave}
+      />
       <Footer />
-      <BurgerMenu />
     </div>
   );
 }
