@@ -1,2 +1,2 @@
-https://disk.yandex.ru/d/ZED1bcFl1P5UsA - макет диплома на яндекс диск
-https://dropmefiles.com/zqpmK - запасная ссылка на макет диплома
+https://github.com/ValentinaYablochkina/movies-explorer-frontend/pull/2#issue-1436897919
+https://movies-explorer.valentina.nomoredomains.icu/
