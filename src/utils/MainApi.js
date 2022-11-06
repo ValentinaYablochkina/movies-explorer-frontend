@@ -56,7 +56,7 @@ export const getUserInfo = () => {
   return fetch(`${BASE_URL}/profile`, {
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Request-Headers": "http://localhost:3000",
+      "Access-Control-Request-Headers": "https://movies-explorer.Valentina.nomoredomains.icu",
       authorization: `Bearer ${localStorage.getItem("jwt")}`,
     },
   }).then(checkResponse);
@@ -67,7 +67,7 @@ export const changeProfileData = (name, email) => {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Request-Headers": "http://localhost:3000",
+      "Access-Control-Request-Headers": "https://movies-explorer.Valentina.nomoredomains.icu",
       authorization: `Bearer ${localStorage.getItem("jwt")}`,
     },
     body: JSON.stringify({
@@ -82,7 +82,7 @@ export const register = (name, email, password) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Request-Headers": "http://localhost:3000",
+      "Access-Control-Request-Headers": "https://movies-explorer.Valentina.nomoredomains.icu",
     },
     body: JSON.stringify({
       name: name,
@@ -97,7 +97,7 @@ export const authorize = (email, password) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Request-Headers": "http://localhost:3000",
+      "Access-Control-Request-Headers": "https://movies-explorer.Valentina.nomoredomains.icu",
     },
     body: JSON.stringify({ email, password }),
   }).then(checkResponse);
@@ -108,7 +108,7 @@ export const checkToken = (jwt) => {
     headers: {
       "Content-Type": "application/json",
       authorization: `Bearer ${jwt}`,
-      "Access-Control-Request-Headers": "http://localhost:3000",
+      "Access-Control-Request-Headers": "https://movies-explorer.Valentina.nomoredomains.icu",
     },
   }).then(checkResponse);
 };
