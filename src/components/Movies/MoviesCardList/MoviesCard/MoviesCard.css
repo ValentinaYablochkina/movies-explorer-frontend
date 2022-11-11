@@ -71,6 +71,16 @@
   background-color: #ff3055;
 }
 
+.card__button_active-with-image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: no-repeat center url(./../../../../images/deleteFilmIcon.svg);
+}
+
 .card__button_active:after {
   content: "";
   width: 100%;

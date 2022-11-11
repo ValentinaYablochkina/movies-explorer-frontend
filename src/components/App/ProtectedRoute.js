@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import Preloader from "../Movies/Preloader";
+import Preloader from "../Preloader/Preloader";
 
 const ProtectedRoute = ({ component: Component, ...props }) => {
   const { isLoaded } = React.useContext(CurrentUserContext);

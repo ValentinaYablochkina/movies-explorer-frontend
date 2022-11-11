@@ -17,6 +17,7 @@ import { LOADING_STATUS } from "../../constants/MoviesConstants";
 import InfoTooltip from "../InfoTooltip/InfoTooltip";
 import success from "../../images/success.svg";
 import failure from "../../images/Failure.svg";
+import { MAX_DURATION_OF_SHORT_FILM } from "./../../constants/MoviesConstants";
 
 function App() {
   const history = useHistory();
@@ -169,7 +170,7 @@ function App() {
 
   // COMPLETE - ФУНКЦИЯ ПРОВЕРЯЮЩАЯ ПОДХОДИТ-ЛИ ДЛИТЕЛЬНОСТЬ ФИЛЬМА
   function isRightDuration(duration) {
-    return !isShorts || duration <= 40;
+    return !isShorts || duration <= MAX_DURATION_OF_SHORT_FILM;
   }
 
   // COMPLETE - ФУНКЦИЯ ВОЗРАЩАЮЩАЯ СОХРАНЁННЫЕ ФИЛЬМЫ ТЕКУЩЕГО ПОЛЬЗОВАТЕЛЯ
@@ -373,6 +374,7 @@ function App() {
             onToggleIsShorts={toggleIsShort}
             onSave={saveMovie}
             onUnsave={unsaveMovie}
+            moviesIsLoaded={moviesIsLoaded}
           />
           <ProtectedRoute
             component={SavedMovies}
@@ -386,6 +388,7 @@ function App() {
             onToggleIsShorts={toggleIsShort}
             onSave={saveMovie}
             onUnsave={unsaveMovie}
+            moviesIsLoaded={savedMoviesIsLoaded}
           />
           <Route path="*">
             <PageNotFound />

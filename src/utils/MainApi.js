@@ -1,4 +1,4 @@
-    export const BASE_URL = "https://api.valentina92.films.nomoredomains.sbs";
+export const BASE_URL = "https://api.valentina92.films.nomoredomains.sbs";
 
 const checkResponse = (response) => {
   return response.ok

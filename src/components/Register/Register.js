@@ -54,7 +54,9 @@ function Register({ onRegister }) {
   return (
     <section>
       <header className="register__header">
-        <img src={logo} alt="Логотип" className="register__logo" />
+        <Link to="/" className="register__logo" >
+        <img src={logo} alt="Логотип" />
+        </Link>
         <h2 className="register__words">Добро пожаловать!</h2>
       </header>
       <form className="register__form" onSubmit={handleSubmit}>

@@ -1,7 +1,10 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+import deleteFilmIcon from "./../../../../images/deleteFilmIcon.svg";
 import "./MoviesCard.css";
 
 function MoviesCard({ movie, savedMovies, onSave, onUnsave }) {
+  const location = useLocation();
   const isSaved = savedMovies.some(
     (savedMovie) => +savedMovie.movieId === (movie.id || +movie.movieId)
   );
@@ -21,7 +24,7 @@ function MoviesCard({ movie, savedMovies, onSave, onUnsave }) {
 
   function handleClick(e) {
     if (movie.trailerLink) {
-      window.location.href = movie.trailerLink;
+      window.open(movie.trailerLink);
     } else {
       alert("У данного фильма отсутствует трейлер.");
     }
@@ -43,7 +46,13 @@ function MoviesCard({ movie, savedMovies, onSave, onUnsave }) {
         className="card__image"
       />
       <button
-        className={`card__button ${isSaved ? "card__button_active" : ""}`}
+        className={`card__button ${
+          !isSaved
+            ? ""
+            : location.pathname === "/saved-movies"
+            ? "card__button_active-with-image"
+            : "card__button_active"
+        }`}
         type="button"
         onClick={handleSaveMovie}
       >

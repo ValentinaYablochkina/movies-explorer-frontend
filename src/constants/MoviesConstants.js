@@ -28,3 +28,5 @@ export const BREAKPOINTS = {
     initialAmount: 5,
   },
 };
+
+export const MAX_DURATION_OF_SHORT_FILM = 40;

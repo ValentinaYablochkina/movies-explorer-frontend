@@ -53,7 +53,9 @@ function Login({ onLogin }) {
   return (
     <div>
       <header className="register__header">
-        <img src={logo} alt="Логотип" className="register__logo" />
+        <Link to="/" className="register__logo" >
+        <img src={logo} alt="Логотип" />
+        </Link>
         <h2 className="register__words">Рады видеть!</h2>
       </header>
       <form className="register__form" onSubmit={handleSubmit}>
