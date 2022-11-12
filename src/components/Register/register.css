@@ -69,6 +69,12 @@
   opacity: 0.8;
 }
 
+.register__btn:disabled {
+  background-color: #F8F8F8;
+  color: #000;
+  cursor: default;
+}
+
 .register__sign {
   color: #a0a0a0;
   font-family: "Inter", "Arial", sans-serif;

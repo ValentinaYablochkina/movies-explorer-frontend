@@ -41,6 +41,10 @@
 
 .preloader {
     display: none;
+}
+
+.preloader_active {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -48,6 +52,7 @@
     z-index: 10;
     padding: 20px;
 }
+
 
 .preloader__container {
     width: 100px;
